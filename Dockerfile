@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     g++-10-aarch64-linux-gnu \
     libsdl2-dev \
     ca-certificates \
+    file \
     wget \
  && rm -rf /var/lib/apt/lists/* \
  && ln -sf /usr/bin/aarch64-linux-gnu-gcc-10 /usr/local/bin/aarch64-linux-gnu-gcc \

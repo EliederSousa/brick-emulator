@@ -1,6 +1,9 @@
 services:
   build-arm:
     build: .
+    # Build as your host user so build-arm/ files aren't root-owned
+    # (otherwise rm/chown on the host needs sudo).
+    user: "${UID:-1000}:${GID:-1000}"
     volumes:
       - .:/work
     working_dir: /work
