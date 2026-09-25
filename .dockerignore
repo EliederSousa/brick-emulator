@@ -1,0 +1,4 @@
+.git/
+build/
+build-arm/
+port/brickemu/brickemu/brickemu-sdl.*
